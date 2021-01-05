@@ -1,0 +1,19 @@
+{
+    "lang.en": "English",
+    "lang.ar": "عربى",
+    "menu.placeholder": "البند الفرعي 2",
+    "menu.what_we_do": "الذي نفعله",
+    "menu.publications": "المنشورات",
+    "menu.carrees": "وظائف",
+    "menu.about_us": "معلومات عنا",
+    "menu.contact_us": "اتصل بنا",
+    "service.title": "ننصح ونصمم وننفذ:",
+    "service.item_1": "أتمتة البنية التحتية السحابية",
+    "service.item_2": "منصات هندسة البيانات",
+    "service.item_3": "حلول ML و AI",
+    "service.item_4": "تطبيقات الويب والجوال الذكية",
+    "chat.title": "دردشة",
+    "chat.your_message": "أدخل رسالتك",
+    "chat.your_name": "أدخل أسمك",
+    "chat.send": "إرسال"
+}

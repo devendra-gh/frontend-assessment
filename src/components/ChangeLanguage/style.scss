@@ -1,0 +1,14 @@
+@import "src/styles/variables.scss";
+
+.language {
+  &__wrapper {
+    position: fixed;
+    bottom: $spacing-small;
+    right: $spacing-small;
+
+    [dir="rtl"] & {
+      left: $spacing-small;
+      right: auto;
+    }
+  }
+}

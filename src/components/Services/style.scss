@@ -1,0 +1,74 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+.services {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include media("mobile-landscape-max") {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__section {
+    &__left {
+      padding: $spacing-12 $spacing-xxxlarge $spacing-large;
+
+      @include media("tablet-portrait-max") {
+        padding: $spacing-8 $spacing-medium $spacing-large;
+      }
+    }
+
+    &__right {
+      img {
+        margin-top: -75px;
+        max-width: 100%;
+      }
+
+      @include media("tablet-portrait-max") {
+        padding: $spacing-xxxlarge;
+      }
+
+      @include media("mobile-landscape-max") {
+        display: none;
+      }
+    }
+  }
+
+  &__list {
+    max-width: $spacing-13;
+  }
+
+  &__item {
+    margin-top: $spacing-large;
+    padding: $spacing-small $spacing-medium;
+    color: $color-white;
+    font-size: $font-size-xxlarge;
+    border-radius: $spacing-small;
+    background-color: $color-grey;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color-grey, 10%);
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $spacing-xxxlarge;
+    height: $spacing-xxxlarge;
+  }
+
+  &__label {
+    padding-inline-start: $spacing-medium;
+
+    @include media("tablet-portrait-max") {
+      font-size: $font-size-xlarge;
+    }
+  }
+}

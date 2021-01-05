@@ -1,0 +1,47 @@
+@import "src/styles/variables.scss";
+
+.chat-messanger {
+  &__icon {
+    position: fixed;
+    bottom: $spacing-large;
+    right: $spacing-large;
+    width: $spacing-9;
+    height: $spacing-9;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+
+    [dir="rtl"] & {
+      left: $spacing-large;
+      right: auto;
+    }
+  }
+
+  &__close {
+    width: $spacing-xxlarge;
+    height: $spacing-xxlarge;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: $font-size-medium;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: $spacing-large;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+}

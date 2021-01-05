@@ -1,0 +1,12 @@
+.landing {
+  &__wrapper {
+    height: 100%;
+    background-image: url("../../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    [dir="rtl"] & {
+      background-image: url("../../images/bg-flip.png");
+    }
+  }
+}

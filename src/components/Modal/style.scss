@@ -1,0 +1,22 @@
+@import "src/styles/variables.scss";
+
+.modal {
+  &__close {
+    width: $spacing-xxlarge;
+    height: $spacing-xxlarge;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: $font-size-medium;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: none;
+    cursor: pointer;
+
+    [dir="rtl"] & {
+      left: 0;
+      right: auto;
+    }
+  }
+}
