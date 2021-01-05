@@ -1,0 +1,30 @@
+@import "src/styles/variables.scss";
+@import "src/styles/mixins.scss";
+
+.articles {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $spacing-large;
+
+    @include media("tablet-landscape-max") {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media("mobile-landscape-max") {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    padding: $spacing-large;
+    border: 1px solid $color-grey;
+    border-radius: $spacing-small;
+    background-color: $color-white;
+
+    p {
+      padding-top: $spacing-large;
+      font-size: $font-size-large;
+    }
+  }
+}

@@ -1,15 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import LayoutWrapper from "../../components/LayoutWrapper";
+import Articles from "../../components/Articles";
 
 interface Props { }
 
 const Carrees: React.FC<Props> = () => {
-    const postId = 5;
+    const { t } = useTranslation();
+
     return (
-        <div>
-            <div>Carrees</div>
-            <Link to={`/posts/${postId}`}>go to post 1</Link>
-        </div>
+        <LayoutWrapper>
+            <h1 className="pb__20">{t('carrees.title')}</h1>
+            <Articles />
+        </LayoutWrapper>
     );
 };
 

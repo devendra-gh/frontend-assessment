@@ -1,14 +1,16 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 
 interface Props { }
 
 const NotFound: React.FC<Props> = () => {
-    const postId = 5;
+    const { t } = useTranslation();
+
     return (
         <div>
-            <div>NotFound</div>
-            <Link to={`/posts/${postId}`}>go to post 1</Link>
+            <div>{t('not_found.title')}</div>
+            <Link to={`/`}>{t('not_found.goto_home')}</Link>
         </div>
     );
 };

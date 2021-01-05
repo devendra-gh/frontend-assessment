@@ -15,5 +15,14 @@
     "chat.title": "Chat",
     "chat.your_message": "Enter your message",
     "chat.your_name": "Enter your name",
-    "chat.send": "Send"
+    "chat.send": "Send",
+    "not_found.title": "Page not found",
+    "not_found.goto_home": "Go to Home",
+    "about_us.title": "About US",
+    "what_we_do.title": "What we do",
+    "publications.title": "Publications",
+    "contact_us.title": "Contact US",
+    "carrees.title": "Carrees",
+    "lorem.title": "What is Lorem Ipsum?",
+    "lorem.desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 }

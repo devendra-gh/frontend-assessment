@@ -32,6 +32,12 @@ h2 {
   font-weight: $font-weight-bold;
 }
 
+.pb {
+  &__20 {
+    padding-bottom: $spacing-large;
+  }
+}
+
 input {
   padding: $spacing-medium;
   margin-bottom: $spacing-large;

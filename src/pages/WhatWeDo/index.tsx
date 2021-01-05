@@ -1,14 +1,19 @@
 import React from "react";
-import { RouteComponentProps } from "react-router";
+import { useTranslation } from 'react-i18next';
+import LayoutWrapper from "../../components/LayoutWrapper";
+import Articles from "../../components/Articles";
 
-interface Props extends RouteComponentProps<{ id: string }> { }
+interface Props { }
 
-const WhatWeDo: React.FC<Props> = ({ match }) => {
-    // React.useEffect(() => {
-    //   fetch(`api.example.com/posts/${match.params.id}`)
-    // }, [match.params.id])
+const WhatWeDo: React.FC<Props> = () => {
+    const { t } = useTranslation();
 
-    return <div>rendering post {match.params.id}</div>;
+    return (
+        <LayoutWrapper>
+            <h1 className="pb__20">{t('what_we_do.title')}</h1>
+            <Articles />
+        </LayoutWrapper>
+    );
 };
 
 export default WhatWeDo;
